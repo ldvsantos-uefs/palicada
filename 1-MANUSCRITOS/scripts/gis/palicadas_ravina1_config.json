@@ -1,0 +1,60 @@
+{
+  "palicadas": [
+    {
+      "id": 1,
+      "area_group": "SUP",
+      "crest_height_cm": 50.0,
+      "current_fill_cm": 0.0,
+      "pool_area_m2": null,
+      "catchment_area_m2": null,
+      "deposit_length_pct": 0.18
+    },
+    {
+      "id": 2,
+      "area_group": "MED",
+      "crest_height_cm": 76.0,
+      "current_fill_cm": 0.0,
+      "pool_area_m2": null,
+      "catchment_area_m2": null,
+      "deposit_length_pct": 0.20
+    },
+    {
+      "id": 3,
+      "area_group": "MED",
+      "crest_height_cm": 76.0,
+      "current_fill_cm": 0.0,
+      "pool_area_m2": null,
+      "catchment_area_m2": null,
+      "deposit_length_pct": 0.20
+    },
+    {
+      "id": 4,
+      "area_group": "INF",
+      "crest_height_cm": 36.0,
+      "current_fill_cm": 0.0,
+      "pool_area_m2": null,
+      "catchment_area_m2": null,
+      "deposit_length_pct": 0.16
+    }
+  ],
+  "vib_cm_h_by_area_group": {
+    "SUP": 3.13,
+    "MED": 1.53,
+    "INF": 1.59
+  },
+  "vib_notes": "VIB (cm/h) por terço da ravina; calculada como média das 5 últimas leituras da coluna 'Velocidade de infiltração Média (cm/h)' em 2-DADOS/Infiltracao.xlsx.",
+  "vib_to_runoff_model": {
+    "enabled": true,
+    "method": "power_inverse",
+    "ref_vib_cm_h": 2.0,
+    "alpha": 1.0,
+    "coeff_at_ref": 0.6,
+    "min_coeff": 0.2,
+    "max_coeff": 0.95
+  },
+  "vib_to_runoff_notes": "Regra: runoff_coeff_eff = clamp(coeff_at_ref * (ref_vib_cm_h / vib_cm_h)^alpha, min_coeff, max_coeff). Se --runoff-coeff for passado no CLI, ele sobrescreve tudo.",
+  "defaults": {
+    "runoff_coeff": 0.6
+  },
+  "notes": "Alturas úteis (crest_height_cm) inicializadas a partir do texto do manuscrito (50 cm superior; 76 cm intermediário; 36 cm inferior). Ajuste se você tiver alturas medidas por paliçada (P1–P4). deposit_length_pct controla o comprimento da cunha a montante (0–1)."
+}

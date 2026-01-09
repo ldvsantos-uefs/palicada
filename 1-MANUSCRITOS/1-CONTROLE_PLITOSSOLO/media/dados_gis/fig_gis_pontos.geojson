@@ -1,0 +1,106 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -37.19959916650101,
+          -10.924101730520192
+        ]
+      },
+      "properties": {
+        "id": "P1",
+        "tipo": "palicada",
+        "ordem": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -37.19969811202297,
+          -10.924707489749752
+        ]
+      },
+      "properties": {
+        "id": "P2",
+        "tipo": "palicada",
+        "ordem": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -37.1997929750158,
+          -10.925272485115375
+        ]
+      },
+      "properties": {
+        "id": "P3",
+        "tipo": "palicada",
+        "ordem": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -37.199638691489746,
+          -10.923800044916412
+        ]
+      },
+      "properties": {
+        "id": "M0",
+        "tipo": "monitoramento"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -37.19959916650101,
+          -10.924047487918743
+        ]
+      },
+      "properties": {
+        "id": "M1",
+        "tipo": "monitoramento"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -37.19969811202297,
+          -10.924653247148301
+        ]
+      },
+      "properties": {
+        "id": "M2",
+        "tipo": "monitoramento"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -37.1997929750158,
+          -10.925218242513926
+        ]
+      },
+      "properties": {
+        "id": "M3",
+        "tipo": "monitoramento"
+      }
+    }
+  ]
+}

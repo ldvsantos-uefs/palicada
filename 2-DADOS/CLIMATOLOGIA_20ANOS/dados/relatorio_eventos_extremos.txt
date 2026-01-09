@@ -1,0 +1,30 @@
+
+ANÁLISE DE EVENTOS EXTREMOS E SEDIMENTAÇÃO
+Data: 2026-01-05 08:12
+
+CLASSIFICAÇÃO DE EVENTOS:
+  Eventos Extremos (P95): 6
+  Eventos Muito Altos (P90-P95): 3
+  Eventos Altos (P75-P90): 9
+  Eventos Moderados (P50-P75): 18
+
+LIMIARES:
+  P95 (Extremo): 359.00 mm
+  P90 (Muito Alto): 341.20 mm
+  P75 (Alto): 151.20 mm
+  P50 (Moderado): 70.20 mm
+
+SEDIMENTAÇÃO POR CLASSE:
+  Extremo: 0.0146 cm/mês
+  Muito Alto: 0.0053 cm/mês
+  Alto: 0.0668 cm/mês
+  Moderado: 0.0181 cm/mês
+
+CORRELAÇÕES:
+  Precipitação × Sedimentação: r=0.1766
+  EI30 × Sedimentação: r=0.1032
+
+FIGURAS GERADAS:
+  - 12_painel_eventos_extremos_sedimentacao.png (7 painéis)
+  - 13_eventos_extremos_detalhado.png (4 painéis)
+    - 14_analise_por_classe_intensidade.png (4 painéis)

@@ -1,0 +1,55 @@
+Reviewer #1: In this manuscript, soil nitrogen stocks and humic fractions were investigated under various cover types. They concluded that conservation practices based on tree plantations with deep roots and continuous organic input are essential to preserve nitrogen stability and sustainability of tropical Latosols. However, the presented data are unbelievable in so small variations. All plantations and agriculture areas were shifted from the native forest and in a same time? The explanation of N stock in various soils is weak without any evidences supported from N input and transformation. Moreover, N accumulation in soil differs greatly from SOM though organic N is co-related to SOM.
+
+
+Reviewer #2: First of all, I apologize for the delayed review. I have read the paper with interest and found numerous problems throughout the manuscript. 1. The abbreviation uses are vague. 2. The abstract are not an appropriate summary of the paper. 3. Authors did not carefully match the style need of a good quality paper, and several section they wrote too long (i.e., materials and methods and result and discussion). 4. The result section needs to be written separately and only necessary statistical information should be mentioned for easy grasping (e.g., p levels). 5. The figure quality is not satisfactory, and fonts are too small to read. Based on these comments as well as comments given below, I would like to recommend reject and resubmitting after revision.
+
+I think title should be more precise.
+Impact of Land Use Change on Soil Nitrogen Stocks and Humic Fractions in Latosol from Brazilian Cerrado
+Highlights
+H2: at depth is not clear.
+H3: Concentrated does not suit here. Do you mean increased? If yes, please use it or similar. It is better to use common words in scientific writing.
+-- The highlights are mostly fragmented and unclear. It is not clear what was the land use change. Forest to Teak and agriculture? It should be in H1. The last highlight is not your finding, it is just your suggestion. Highlight should be based on your finding.
+L10-11: The species names should be in italic.
+L14-15: It is not needed to mention here these statistical analyses.
+L15-16: Please give an increasing or decreasing order rather than highest and lowest.
+L19-20: What was the RDA result? What variation it explained?
+L20-22: The conclusion in abstract should be based on given results. But you have not provided the enough result in abstract to support this conclusion.
+Introduction:
+The first paragraph of introduction often tells the reason behind conducting this study with specific land use change and/or place of study. However, it is completely ignored till two paragraph of Introduction. The introduction is a place to initiate reason behind this study and associated literature review rather than just summarize past findings.
+-- Please appropriately add citations in introduction. For ex., L76.
+L101-104: From your hypothesis, it is clear that you want to compare forest and agriculture. But it is not highlighted in your abstract and other parts of introduction. You need to bring more clarity in the abstract and introduction in this context. It is also needed to specified if Cerrado Stricto Sensu is a native vegetation. It should be specified in the abstract and introduction. It means Cerrado Stricto Sensu is a reference site, 3 monoculture plantation, and 1 agriculture. You need to draft comparisons in writing accordingly. It is also not clear if Cerrado Stricto Sensu is a tropical forest. If yes, then use the name specific tropical forest rather than Cerrado Stricto Sensu. This will be more useful for global researchers.
+L135-192: This section offers limited significance and is unnecessary too long. This should be no more than two paragraphs. Author should check some previous publications to learn how much information need to be provided.
+L233-270: This section is also too long. You don't need to make a specific heading for each analysis. You need to clump them with statistical analyses. Some unnecessary information should be also deleted in this section to reduce overall length of this section.
+L275: Not clear total N stock of soil or humus fraction; please specify in the sentences.
+L274, 279, 280, etc.: There is no need to provide χ² Wald value. The p values are enough.
+--L275-285: The results written in a fragmented manner. The comparision should be done among all treatments rather than just presenting higher and lower. A trend or increasing or decreasing order should be provided for all treatments. The author may also choose to compare three systems; natural forest (Cerrado Stricto Sensu), plantation forest (3 monoculture plantation), and agriculture, which will be easy to compare. However, in separate, they can also mention which plantation forest was heighest or lowest among plantation forest.
+---I also suggest author to write result section separately for more clarity.
+L275, 282, 289: This is not an abbreviation. This is also redundant.
+L290: Higher stock in agriculture probably due to higher rate of application.
+L296-300: Is there any plantation species that is leguminous? You should consider this factor also to interpret.
+L298: How soluble and readily decomposed compounds have higher N? How can solubility and decomposition traits define N level?
+L299-300: Is this citation from the same forest and region? For specific findings, please consider to cite a study that was conducted in similar environment.
+Fig 4.: Figure quality is not satisfactory. Font size are too small to read. The symbol and font size needed to increase.
+L331-332: These abbreviations are vague and unclear. You must short them for clear interpretation.
+L335-336: Here, it is expected from you to provide more insights, such as which sites are better in terms of humus and N rather than just mentioning clear difference.
+L362: Are the age of plantation not same? If so, then how is this comparison between plantation justified?
+L376-377: How drought can contribute to mineralization? Mineralization rely on microbial activity, which demands water.
+--- You need to learn how to interpret results when there are more than three treatments. Please refer to Singh et al. (2018), Ecological Indicators, 95, 953-963, and related papers to synthesize interpretation and reduce ambiguity.
+L429: You need to also learn how to cite papers at different end of the sentence. For ex., It should be Basche and Delonge (2022). However, & sign is not used in FEM journal.
+The result and discussion section is too long. At least 1/3 part should be shorted. The result section should be written separately.
+---Conclusion section is fragmented and written in a monotonous manner. It should concise.
+ 
+
+
+
+FAQ: How can I reset a forgotten password?
+https://service.elsevier.com/app/answers/detail/a_id/28452/supporthub/publishing/
+For further assistance, please visit our customer service site: https://service.elsevier.com/app/home/supporthub/publishing/
+Here you can search for solutions on a range of topics, find answers to frequently asked questions, and learn more about Editorial Manager via interactive tutorials. You can also talk 24/7 to our customer support team by phone and 24/7 by live chat and email
+
+At Elsevier, we want to help all our authors to stay safe when publishing. Please be aware of fraudulent messages requesting money in return for the publication of your paper. If you are publishing open access with Elsevier, bear in mind that we will never request payment before the paper has been accepted. We have prepared some guidelines (https://www.elsevier.com/connect/authors-update/seven-top-tips-on-stopping-apc-scams ) that you may find helpful, including a short video on Identifying fake acceptance letters (https://www.youtube.com/watch?v=o5l8thD9XtE ). Please remember that you can contact Elsevier s Researcher Support team (https://service.elsevier.com/app/home/supporthub/publishing/) at any time if you have questions about your manuscript, and you can log into Editorial Manager to check the status of your manuscript (https://service.elsevier.com/app/answers/detail/a_id/29155/c/10530/supporthub/publishing/kw/status/).
+
+#AU_FORECO#
+
+To ensure this email reaches the intended recipient, please do not delete the above code
+

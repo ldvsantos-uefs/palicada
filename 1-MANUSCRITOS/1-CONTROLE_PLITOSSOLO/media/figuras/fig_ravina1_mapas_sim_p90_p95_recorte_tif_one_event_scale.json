@@ -1,0 +1,7 @@
+{
+  "vmin": 0.0,
+  "vmax": 100.0,
+  "cmap": "Spectral_r",
+  "label": "Elevação relativa (escala imposta) (cm)",
+  "mode": "one-event"
+}

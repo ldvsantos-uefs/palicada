@@ -1,0 +1,42 @@
+
+EVENTOS EXTREMOS: ACUMULADA vs INCREMENTAL
+==========================================
+
+LIMIARES P95:
+  Precipitação:  356.33 mm
+  Acumulada:     0.4779 cm
+  Incremental:   0.0853 cm
+
+EVENTOS IDENTIFICADOS:
+  Precipitação extrema:  2 eventos
+  Acumulada extrema:     4 eventos
+  Incremental extrema:   4 eventos
+
+DIFERENÇAS CONCEITUAIS:
+
+ACUMULADA:
+  • Integral temporal de todos os eventos
+  • Cresce monotonicamente
+  • Eventos extremos = períodos de maior acúmulo total
+  • Reflete perda histórica de solo
+  
+INCREMENTAL:
+  • Taxa mensal (cm/mês)
+  • Pode subir e descer
+  • Eventos extremos = picos de erosão específicos
+  • Reflete resposta ao evento do mês
+
+IMPLICAÇÕES PARA INTERPRETAÇÃO:
+  
+  → Evento extremo ACUMULADA: maior sedimentação acumulada até aquele ponto
+  → Evento extremo INCREMENTAL: maior taxa de erosão naquele mês específico
+  
+  ⚠️  Um mês pode ter sedimentação incremental baixa mas acumulada alta
+      (acúmulo de eventos anteriores)
+  
+  ⚠️  Um mês pode ter sedimentação incremental alta mas acumulada baixa
+      (evento isolado no início do monitoramento)
+
+RECOMENDAÇÃO:
+  Para análise de EVENTOS e correlação com chuva mensal: USE INCREMENTAL
+  Para avaliação de PERDA TOTAL de solo: USE ACUMULADA

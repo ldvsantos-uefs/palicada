@@ -1,0 +1,56 @@
+{
+  "vib_cm_h_by_area_group": {
+    "SUP": 3.13,
+    "MED": 1.53,
+    "INF": 1.59
+  },
+  "vib_notes": "VIB (cm/h) por terço da ravina; média das 5 últimas leituras em 2-DADOS/Infiltracao.xlsx.",
+  "vib_to_runoff_model": {
+    "enabled": true,
+    "method": "power_inverse",
+    "ref_vib_cm_h": 2.0,
+    "alpha": 1.0,
+    "coeff_at_ref": 0.6,
+    "min_coeff": 0.2,
+    "max_coeff": 0.95
+  },
+  "vib_to_runoff_notes": "Regra: runoff_coeff_eff = clamp(coeff_at_ref * (ref_vib_cm_h / vib_cm_h)^alpha, min_coeff, max_coeff). Se --runoff-coeff for passado no CLI, ele sobrescreve tudo.",
+  "palicadas": [
+    {
+      "id": 1,
+      "area_group": "SUP",
+      "crest_height_cm": 100.0,
+      "current_fill_cm": 0.0,
+      "pool_area_m2": null,
+      "catchment_area_m2": null
+    },
+    {
+      "id": 2,
+      "area_group": "MED",
+      "crest_height_cm": 100.0,
+      "current_fill_cm": 0.0,
+      "pool_area_m2": null,
+      "catchment_area_m2": null
+    },
+    {
+      "id": 3,
+      "area_group": "MED",
+      "crest_height_cm": 100.0,
+      "current_fill_cm": 0.0,
+      "pool_area_m2": null,
+      "catchment_area_m2": null
+    },
+    {
+      "id": 4,
+      "area_group": "INF",
+      "crest_height_cm": 100.0,
+      "current_fill_cm": 0.0,
+      "pool_area_m2": null,
+      "catchment_area_m2": null
+    }
+  ],
+  "defaults": {
+    "runoff_coeff": 0.6
+  },
+  "notes": "Preencha pool_area_m2 para obter volumes e catchment_area_m2 para obter volume de escoamento. crest_height_cm representa a altura útil para acumulação sem extravasamento. current_fill_cm permite descontar preenchimento já ocorrido. area_group deve estar em SUP, MED ou INF para usar o ajuste empírico do FRACIONADO."
+}

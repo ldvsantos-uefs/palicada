@@ -1,0 +1,11 @@
+{
+  "title": "ORTOMOSAICO DAS RAVINAS",
+  "date": "11 May 2025",
+  "number_of_images": "113",
+  "flying_altitude_m": "8.29",
+  "ground_resolution": "2.12 mm/pix",
+  "camera_stations": "113",
+  "tie_points": "249,111",
+  "projections": "907,778",
+  "reprojection_error_pix": "1.67"
+}

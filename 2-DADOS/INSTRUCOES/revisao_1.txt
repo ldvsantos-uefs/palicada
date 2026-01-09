@@ -1,0 +1,93 @@
+Ref: Submission ID fc44f6d1-409c-41f9-91ed-4978861fe3b1
+
+Dear Dr Santos,
+
+Your manuscript "Fuzzy Soil Nutritional Sustainability Index (FSNSI) for Assessing Production-Phase Impacts in Life Cycle Sustainability Assessment" has now been assessed. If there are any reviewer comments on your manuscript, you can find them at the end of this email.
+
+Regrettably, your manuscript has been rejected for publication in Environmental Systems Research.
+
+Thank you for the opportunity to review your work. I'm sorry that we cannot be more positive on this occasion and hope you will not be deterred from submitting future work to Environmental Systems Research.
+
+Kind regards,
+
+Bing Chen
+Editor
+Environmental Systems Research
+
+While I'm sorry we cannot publish your work in Environmental Systems Research, your manuscript may be a good fit for one of our other journals. At Springer Nature we provide a free service to give authors a range of personalised journal recommendations. The corresponding author will receive an email with more information in the next 2 days. 
+
+Reviewer Comments:
+
+Reviewer 1
+The MS shows many inconsistencies and neglect aspects. It seems to be more an informatic study instead of an environmental research. Particularly, because it includes too much data handling, but the raw data are absent. Moreover, the MS wording is redundant, in consequence is difficult to read and understand
+The MS title is confusing and does not reflex the MS objective: what is the “Production-Phase Impacts in Life Cycle Sustainability Assessment” meaning? what about the P and N dynamic in the different land use of the tropical soils?
+Abstract: please don’t use acronyms (so many) without definition.
+Lines 54-55: this information is twice (see lines 52-53)
+Introduction
+Lines 72-99: these soil processes are well known, please summarize
+Lines 100-124: these paragraphs include too much general information about the sustainability models, but the connection with the N and P focus is lacking. Please, mention the input and output of each model, and justify the uses for N and P dynamics. Moreover, the acronyms are confusing, and the “fuzzy” word use needs explanation.
+Lines 125-131: again, these concepts are well known, and the paragraph must be moved before the models mention (line 99).
+Lines 132-134: this hypothesis is obvious and not necessary
+Lines 135-138: the land use types (native vegetation, silviculture and agriculture), have neither been mentioned nor justified
+Lines 139-147: this paragraph is confusing, redundant, and not necessary: eliminate
+Methods
+Lines 170: the subtitle is ambiguous. Please change by: “Characteristics of land uses situations”
+Line 172: what about the land use before 40 years? was this sector cleared and has now a natural revegetation? please, clarify
+Lines 178-180: figure 2 title: please change “studied area” by “Studied land use situations”. Moreover, the three different tree species plantations have neither been mentioned nor justified. Are they the more common tree species for planting in the region? which is the use of them? Please, add more information
+Fig 2 is not necessary: eliminate
+Lines 185-221: this text is difficult to read and understand. Please, change by a table, which includes (for each land use situations): “stand age”, “soil preparation”, “planting procedure”, “tree density”, and “fertilization”. Moreover, the fertilizers doses must be justified: it is a key factor to N and P evaluation
+Line 240: the soil sampling date must be added: were all situations sampled in the same date? Moreover, change “studied area” by “studied land use situations”
+Figure 3: again, it is not necessary: eliminate
+Lines 147 and followings: too many and unnecessary subtitles.
+Line 247: please change by “Soil analysis”
+Lines 248-249: which undisturbed samples refer to? they have not been mentioned before
+Line 251: the “Appendix 2” mention is out of context, it must be moved to the results section
+Lines 252 and 253: these subtitles must be eliminated
+Line 254: this information repeats the line 245: eliminate
+Line 255: what is the “subsample” meaning?
+Line 259: again, it repeats the line 256 information: eliminate and organize in only one paragraph.
+Lines 262 and 269-270: these subtitles are neither proper nor necessary: eliminate
+Lines 271-283: the methods (and the literature reference), for N and P quantification is repeated over and over again. Please, improve the wording 
+Lines 278-283: this paragraph must be moved to the line 262, because the labile P and N must be    quantified from soil samples before humic acids fractioning. Or, does the labile fraction refer to the LOM? see line 267. Please, clarify
+Lines 278-279: this sentence is not necessary: eliminate
+Line 284: please change by “P and N stock calculation”
+Lines 288 -289: both equations are idem: please, change “N” by “P” in the second one. Moreover, what about the humic fractions? do the equations only refer to the total N and P (lines 257 and 260), or to the total per fraction? please, clarify
+Lines 292-293: again, were the P and N stocks per layer, the summing of all humic fraction values? how was the soil density measured in each soil layer? what was the cylinder diameter? please, add this information in the line 250
+The statistical analysis subsection is too long (4.5 pages), and repetitive: please, summarize and move the details to the supplementary material. For example:
+Line 295: this subtitle is not necessary: eliminate
+Lines 297-305: these sentences are not necessary, please move to the supplementary material and add “(Appendix.)”
+Lines 307-310:  again, this sentence is not necessary: eliminate
+Line 311: the “latent constracts” have not been mentioned before. Please add the definition
+Lines 317-321: again, move this information to the supplementary material
+Line 322: this subtitle is not necessary: eliminate
+Lines 324-325: this sentence is repetitive: eliminate and add “(Appendix.)”
+Lines 327-338: again, this information must be moved to the supplementary material
+Line 344, 355, etc.: is the “linguistic” word necessary?
+Lines 345-352: again, this information must be moved to the supplementary material
+Line 353: the “rule base” needs definition
+And many more inconsistencies
+Results and discussion
+This section is hard to read and understand because: a) the results description does not meet to the MS objectives; b) the raw data are not shown (such as: humic acids fractions per land use situation, N and P content per fractions/soil layers, and N and P stocks); c) there are too many inconsistencies with the methods procedures; d) the results interpretation is over dimensioned regarding to the data description, e) too many statistical procedures are included, f) the same arguments are repeated over and over again, and g) is unnecessarily long (26 pages), summarize.
+For example:
+The subtitles do neither agree with the MS objective nor the methods. What about the N and P in the humic fractions? the chemical raw data per each land use situation (similar to the soil physical data in Appendix 2), are need, previous to the “prediction” analysis
+Lines 390 and many more: the reiterative argument about the differential litter quality is not valid because this parameter has neither been measured nor the values from literature are shown
+Figs 4 and 5: the “est” variables need explanation. Moreover, the legend (Ambiente) must be translated to English
+Line 460: the “HCM” has neither been included in the methods nor mentioned before
+Figure 6: it is difficult to see because is overloaded and lacks the references
+Table 2: why is the R2 shown only for Cerrado (native vegetation)? what about the others land use situations (or the average values)?
+Line 546: the “Principal component analysis” has not been mentioned in the methods
+Lines 567-568: again, the “PLS-MGA” procedure has not been described in the methods
+Fig 7, 8, and 9: the text must be translated to English
+Fig 9: the title into the graph is not proper and the legend is not necessary: the X-axis title is enough.
+Lines 656-658: the FSNSI statistical comparison (ANOVA?) has not been mentioned in the methods
+Line 698 and fig 10: the “FSNSI stratified by depth and land use” has not been mentioned in the methods
+Line 728 and table 4: again, the “Pearson correlation” has not been mentioned in the methods.
+Table 4; the last column (asterisks) has not sense: the p value is enough. Moreover, its reference is incompressible.
+etc. etc.
+
+
+Reviewer 2
+The manuscript entitled: “ Fuzzy Soil Nutritional Sustainability Index (FSNSI) for Assessing Production-Phase Impacts in Life Cycle Sustainability Assessment is interesting and is in the scope of the journal. Authors conducted A comprehensive investigation on the functional dynamics of nitrogen and phosphorus in the humic and labile fractions of the soil under different land uses, proposing and validating an integrated analytical framework (PLSR, PLS-SEM, and FSNSI) for the diagnosis of soil nutritional sustainability.
+
+Attachments:
+• https://reviewer-feedback.springernature.com/download/attachment/3cdfec81-bfc3-4a1b-b761-2b6e74c5d93b

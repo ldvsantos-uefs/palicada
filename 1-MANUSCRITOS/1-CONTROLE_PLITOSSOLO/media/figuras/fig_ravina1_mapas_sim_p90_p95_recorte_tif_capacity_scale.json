@@ -1,0 +1,7 @@
+{
+  "vmin": 0.0,
+  "vmax": 132.72845458984375,
+  "cmap": "Spectral_r",
+  "label": "Elevação relativa (escala imposta) (cm)",
+  "mode": "capacity"
+}

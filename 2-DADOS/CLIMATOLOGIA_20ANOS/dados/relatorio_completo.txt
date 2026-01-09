@@ -1,0 +1,62 @@
+
+ANÁLISE AVANÇADA DE SÉRIES TEMPORAIS CLIMÁTICAS - RELATÓRIO FINAL
+Data: 2025-12-12 22:45
+
+1. DECOMPOSIÇÃO DA SÉRIE TEMPORAL
+   - Tendência média: 95.59 mm
+   - Amplitude sazonal: 119.64 mm
+   - Desvio padrão dos resíduos: 28.53 mm
+
+2. TESTE DE ESTACIONARIEDADE
+   - Série Original: NÃO ESTACIONÁRIA (p=0.0686)
+   - Série Diferenciada: ESTACIONÁRIA (p=0.0000)
+   - Série Dif. Sazonal: ESTACIONÁRIA (p=0.0000)
+
+3. MODELO SARIMA
+   - AIC: 2244.54
+   - BIC: 2261.68
+   - Log-Likelihood: -1117.27
+
+4. ANÁLISE DE EXTREMOS (GEV)
+   - Parâmetro shape (c): 1.1971
+   - Parâmetro location: 28.8714
+   - Parâmetro scale: 0.9920
+   
+   Valores de Retorno:
+   - TR=2 anos: 29.17 mm
+   - TR=5 anos: 29.56 mm
+   - TR=10 anos: 29.64 mm
+   - TR=20 anos: 29.68 mm
+   - TR=50 anos: 29.69 mm
+   - TR=100 anos: 29.70 mm
+
+5. EVENTOS EXTREMOS
+   - Limiar P95: 15.47 mm
+   - Total de eventos: 320
+   - Duração média: 1.1 dias
+   - Precipitação total média: 24.14 mm
+
+6. ÍNDICES DE EROSIVIDADE (EI30)
+   - EI30 mensal médio: 317.20 MJ·mm/ha·h
+   - EI30 anual médio: 3640.27 MJ·mm/ha·h
+   - Máximo mensal: 1608.47 MJ·mm/ha·h
+
+7. ARQUIVOS GERADOS
+   Figuras (8 arquivos):
+   - 1_decomposicao_serie_temporal.png
+   - 2_teste_estacionariedade.png
+   - 3_diferenciacao_sazonal_acf_pacf.png
+   - 4_previsao_sarima.png
+   - 4_diagnostico_sarima.png
+   - 5_analise_extremos_gev.png
+   - 6_eventos_extremos.png
+   - 7_indices_erosividade_ei30.png
+   - 7_ei30_sazonalidade.png
+   - 8_curvas_idf.png
+   
+   Dados (6 arquivos):
+   - valores_retorno_gev.csv
+   - eventos_extremos_detalhados.csv
+   - ei30_mensal.csv
+   - ei30_anual.csv
+   - curvas_idf.csv

@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# Outputs
+*.docx
+*.pdf
+
+# QGIS/Geo
+*.aux.xml
+*.qmd
+*.qpj
+*.qgz~
+
+# Large rasters and raw geodata (ajuste se precisar versionar)
+*.tif
+*.tiff
+
+# Temporary
+1-MANUSCRITOS/scripts/tmp_*
