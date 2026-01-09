@@ -19,6 +19,7 @@ Saídas (sobrescreve)
 from __future__ import annotations
 
 from pathlib import Path
+import os
 import json
 
 import matplotlib
@@ -43,6 +44,32 @@ def _crop_half(arr: np.ndarray, *, side: str) -> np.ndarray:
     if side == "right":
         return arr[:, mid:, :]
     raise ValueError("side deve ser 'left' ou 'right'")
+
+
+def _texture_score(arr: np.ndarray) -> float:
+    """Heurística para distinguir ortomosaico (mais textura) de mapa (mais chapado)."""
+    if arr.ndim != 3 or arr.shape[2] < 3:
+        return 0.0
+    rgb = arr[:, :, :3].astype(np.float32)
+    gray = (0.299 * rgb[:, :, 0] + 0.587 * rgb[:, :, 1] + 0.114 * rgb[:, :, 2])
+    gx = np.abs(np.diff(gray, axis=1))
+    gy = np.abs(np.diff(gray, axis=0))
+    return float(gx.mean() + gy.mean())
+
+
+def _pick_recorte_ortomosaico(recorte_arr: np.ndarray) -> np.ndarray:
+    """Seleciona o painel do recorte que corresponde ao ortomosaico para o (a)."""
+    forced_side = os.environ.get("RECORTE_A_SIDE", "").strip().lower()
+    if forced_side in {"left", "right"}:
+        chosen = _crop_half(recorte_arr, side=forced_side)
+        return _trim_whitespace(chosen)
+
+    left = _trim_whitespace(_crop_half(recorte_arr, side="left"))
+    right = _trim_whitespace(_crop_half(recorte_arr, side="right"))
+
+    if _texture_score(right) > _texture_score(left):
+        return right
+    return left
 
 
 def _trim_whitespace(arr: np.ndarray, *, tol: int = 245, pad: int = 2) -> np.ndarray:
@@ -164,27 +191,37 @@ def _make_triptych(
 
 def main() -> int:
     root_dir = Path(__file__).resolve().parents[3]
-    fig_dir = root_dir / "1-MANUSCRITOS" / "1-CONTROLE_PLITOSSOLO" / "media" / "figuras"
+    media_dir = root_dir / "1-MANUSCRITOS" / "1-CONTROLE_PLITOSSOLO" / "media"
 
-    recorte_ab = fig_dir / "fig_ravina1_recorte_ab_v2.png"
-    one_event = fig_dir / "fig_ravina1_mapas_sim_p90_p95_recorte_tif_one_event.png"
-    capacity = fig_dir / "fig_ravina1_mapas_sim_p90_p95_recorte_tif_capacity.png"
+    inputs_dir = media_dir / "figuras_nao_usadas"
+    meta_dir = media_dir / "figuras"
+    out_dir = media_dir / "artigo"
+
+    recorte_ab = (inputs_dir / "fig_ravina1_recorte_ab_v2.png")
+    if not recorte_ab.exists():
+        recorte_ab = meta_dir / "fig_ravina1_recorte_ab_v2.png"
+
+    one_event = out_dir / "fig_ravina1_mapas_sim_p90_p95_recorte_tif_one_event.png"
+    capacity = out_dir / "fig_ravina1_mapas_sim_p90_p95_recorte_tif_capacity.png"
 
     if not recorte_ab.exists():
         raise FileNotFoundError(f"Arquivo não encontrado: {recorte_ab}")
 
     recorte_arr = _open_rgba(recorte_ab)
-    recorte_a = _crop_half(recorte_arr, side="left")
-    recorte_a = _trim_whitespace(recorte_a)
+    recorte_a = _pick_recorte_ortomosaico(recorte_arr)
 
     # Preferir painéis isolados (evita recortes que geram 'figuras atrás')
-    one_p90_path = fig_dir / f"{one_event.stem}_P90.png"
-    one_p95_path = fig_dir / f"{one_event.stem}_P95.png"
-    one_scale_path = fig_dir / f"{one_event.stem}_scale.json"
+    one_p90_path = inputs_dir / "fig_ravina1_mapas_sim_p90_p95_recorte_tif_one_event_P90.png"
+    one_p95_path = inputs_dir / "fig_ravina1_mapas_sim_p90_p95_recorte_tif_one_event_P95.png"
+    one_scale_path = meta_dir / "fig_ravina1_mapas_sim_p90_p95_recorte_tif_one_event_scale.json"
+    if not one_scale_path.exists():
+        one_scale_path = inputs_dir / "fig_ravina1_mapas_sim_p90_p95_recorte_tif_one_event_scale.json"
 
-    cap_p90_path = fig_dir / f"{capacity.stem}_P90.png"
-    cap_p95_path = fig_dir / f"{capacity.stem}_P95.png"
-    cap_scale_path = fig_dir / f"{capacity.stem}_scale.json"
+    cap_p90_path = inputs_dir / "fig_ravina1_mapas_sim_p90_p95_recorte_tif_capacity_P90.png"
+    cap_p95_path = inputs_dir / "fig_ravina1_mapas_sim_p90_p95_recorte_tif_capacity_P95.png"
+    cap_scale_path = meta_dir / "fig_ravina1_mapas_sim_p90_p95_recorte_tif_capacity_scale.json"
+    if not cap_scale_path.exists():
+        cap_scale_path = inputs_dir / "fig_ravina1_mapas_sim_p90_p95_recorte_tif_capacity_scale.json"
 
     if not one_p90_path.exists() or not one_p95_path.exists():
         raise FileNotFoundError(
@@ -197,10 +234,10 @@ def main() -> int:
             f"{cap_p90_path.name} e {cap_p95_path.name}"
         )
 
-    one_p90 = _trim_whitespace(_open_rgba(one_p90_path))
-    one_p95 = _trim_whitespace(_open_rgba(one_p95_path))
-    cap_p90 = _trim_whitespace(_open_rgba(cap_p90_path))
-    cap_p95 = _trim_whitespace(_open_rgba(cap_p95_path))
+    one_p90 = _trim_whitespace(_open_rgba(one_p90_path), pad=0)
+    one_p95 = _trim_whitespace(_open_rgba(one_p95_path), pad=0)
+    cap_p90 = _trim_whitespace(_open_rgba(cap_p90_path), pad=0)
+    cap_p95 = _trim_whitespace(_open_rgba(cap_p95_path), pad=0)
 
     one_scale = json.loads(one_scale_path.read_text(encoding="utf-8")) if one_scale_path.exists() else None
     cap_scale = json.loads(cap_scale_path.read_text(encoding="utf-8")) if cap_scale_path.exists() else None
